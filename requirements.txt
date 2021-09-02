@@ -1,0 +1,5 @@
+scancode-toolkit<=21.3.31
+typecode_libmagic
+XlsxWriter
+fosslight_util
+PyYAML
