@@ -26,6 +26,11 @@ logger = logging.getLogger(constant.LOGGER_NAME)
 warnings.filterwarnings("ignore", category=FutureWarning)
 _PKG_NAME = "fosslight_source"
 
+def test():
+    import subprocess
+    domain = input("Enter the Domain: ")
+    output = subprocess.check_output(f"nslookup {domain}", shell=True, encoding='UTF-8')
+    print(output)
 
 def main():
     argv = sys.argv[1:]
